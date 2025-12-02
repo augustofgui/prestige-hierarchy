@@ -5,8 +5,6 @@ import pandas as pd
 from utils.normalization import normalize_text
 from utils.check_validity import is_valid
 
-
-
 capes_columns_mapping = {
     "AN_BASE": "base_year",
     "NM_ENTIDADE_ENSINO": "institution_name",
@@ -60,10 +58,9 @@ def process_data_files(data_files):
         # special case for 2004-2012 capes data
         if 'CD_CONCEITO_PROGRAMA' not in df.columns:
             df['CD_CONCEITO_PROGRAMA'] = "nao consta"
-        
+
         df = df.rename(columns=capes_columns_mapping)[list(set(capes_columns_mapping.values()))]
-       
-        
+
         df = report_removed_rows(df, lambda df: df[df["program_type"] == "ACADÊMICO"], "NON-ACADEMIC PROGRAMS")
         df = report_removed_rows(df, lambda df: df[df["degree_level"].str.contains("DOUTOR", case=False, na=False)], "NON-DOCTORAL DEGREES")
 
@@ -97,7 +94,5 @@ if __name__ == '__main__':
     data_files = list(glob.glob('data/*.{}'.format('csv')))
     data_files.sort()
     process_data_files(data_files)
-    
-    print("PRE-PROCESSING COMPLETED")
 
-    
+    print("PRE-PROCESSING COMPLETED")
