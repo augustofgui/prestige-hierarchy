@@ -1,9 +1,44 @@
 import os
 import glob
 import re
+import math
 import pandas as pd
 from utils.normalization import normalize_text
-from utils.check_validity import is_valid
+
+def is_valid(x):
+    if x is None:
+        return False
+    
+    if isinstance(x, float) and math.isnan(x):
+        return False
+    
+    if not isinstance(x, str):
+        return False
+    
+    invalid_patterns = [
+        r"^invalid$",
+        r"^[A-Za-z]$",
+        r"^(.)\1{1,}$",
+        r"^\d$",
+        r"^\d+$",
+        r"^nao informado$",
+        r"^nao informada$",
+        r"^instituicao nao cadastrada$",
+        r"^nao consta$",
+        r"^outra$",
+        r"^outro$",
+        r"^ni$"
+    ]
+
+    invalid_patterns_regex = "|".join(invalid_patterns)
+    
+    if x == "" or x == "nan":
+        return False
+    if re.search(invalid_patterns_regex, x):
+        return False
+    if re.fullmatch(r"[^a-z0-9]+", x):
+        return False
+    return True
 
 capes_columns_mapping = {
     "AN_BASE": "base_year",
