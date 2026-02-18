@@ -1,0 +1,50 @@
+field_id,field_name,big_field_name,big_field_id
+1,matematica probabilidade e estatistica,ciencias exatas e da terra,1
+2,ciencia da computacao,ciencias exatas e da terra,1
+3,astronomia fisica,ciencias exatas e da terra,1
+4,quimica,ciencias exatas e da terra,1
+5,geociencias,ciencias exatas e da terra,1
+6,ciencias biologicas i,ciencias biologicas,2
+7,biodiversidade,ciencias biologicas,2
+8,ciencias biologicas ii,ciencias biologicas,2
+9,ciencias biologicas iii,ciencias biologicas,2
+10,engenharias i,engenharias,3
+11,artes,linguistica letras e arte,4
+12,engenharias ii,engenharias,3
+13,engenharias iii,engenharias,3
+14,engenharias iv,engenharias,3
+15,medicina i,ciencias da saude,5
+16,medicina ii,ciencias da saude,5
+17,medicina iii,ciencias da saude,5
+18,odontologia,ciencias da saude,5
+19,farmacia,ciencias da saude,5
+20,enfermagem,ciencias da saude,5
+21,educacao fisica,ciencias da saude,5
+22,saude coletiva,ciencias da saude,5
+23,zootecnia recursos pesqueiros,ciencias agrarias,6
+24,medicina veterinaria,ciencias agrarias,6
+25,ciencia de alimentos,ciencias agrarias,6
+26,direito,ciencias sociais aplicadas,7
+27,administracao publica e de empresas ciencias contabeis e turismo,ciencias sociais aplicadas,7
+28,economia,ciencias sociais aplicadas,7
+29,arquitetura urbanismo e design,ciencias sociais aplicadas,7
+30,planejamento urbano e regional demografia,ciencias sociais aplicadas,7
+31,comunicacao e informacao,ciencias sociais aplicadas,7
+32,servico social,ciencias sociais aplicadas,7
+33,filosofia,ciencias humanas,8
+34,sociologia,ciencias humanas,8
+35,antropologia arqueologia,ciencias humanas,8
+36,geografia,ciencias humanas,8
+37,psicologia,ciencias humanas,8
+38,educacao,ciencias humanas,8
+39,ciencia politica e relacoes internacionais,ciencias humanas,8
+40,historia,ciencias humanas,8
+41,linguistica e literatura,linguistica letras e arte,4
+42,ciencias agrarias i,ciencias agrarias,6
+44,ciencias da religiao e teologia,ciencias humanas,8
+45,interdisciplinar,multidisciplinar,9
+46,ensino,multidisciplinar,9
+47,materiais,multidisciplinar,9
+48,biotecnologia,multidisciplinar,9
+49,ciencias ambientais,multidisciplinar,9
+50,nutricao,ciencias da saude,5
